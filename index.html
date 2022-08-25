@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI TẬP JS BUỔI 2 - 3</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="main__header">
+                <ul class="nav nav-pills mb-1" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-bai1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Bài tập 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-bai2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bài tập 2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-bai3" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Bài tập 3</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-bai4" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Bài tập 4</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#pills-bai5" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Bài tập 5</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="main__content">
+                <div class="tab-content container" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-bai1" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="main__title">
+                            <h5>
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                Tính tiền lương nhân viên
+                            </h5>
+                        </div>
+                        <div class="main__body">
+                            <div class="main__nhapso">
+                                <input id="luongNgay" type="number" placeholder="Nhập lương 1 ngày">
+                                <input id="soNgayLam" type="number" placeholder="Nhập số ngày làm">
+                            </div>
+                            <div class="main__button">
+                                <button id="btnTinhLuong" class="btn">
+                                    Tính lương
+                                </button>
+                            </div>
+                            <div class="main__ketqua">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <input class="form-control" type="text" readonly>
+                                <p id="showLuong"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-bai2" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="main__title">
+                            <h5>
+                                <i class="fa-solid fa-calculator"></i>
+                                Tính giá trị trung bình
+                            </h5>
+                        </div>
+                        <div class="main__body">
+                            <div class="main__nhapso">
+                                <input id="number1" type="number" placeholder="Nhập số thứ nhất">
+                                <input id="number2" type="number" placeholder="Nhập số thứ hai">
+                                <input id="number3" type="number" placeholder="Nhập số thứ ba">
+                                <input id="number4" type="number" placeholder="Nhập số thứ tư">
+                                <input id="number5" type="number" placeholder="Nhập số thứ năm">
+                            </div>
+                            <div class="main__button">
+                                <button id="tinhTrungBinh" class="btn">
+                                    Tính trung bình
+                                </button>
+                            </div>
+                            <div class="main__ketqua">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <input class="form-control" type="text" readonly>
+                                <p id="showTrungBinh"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-bai3" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="main__title">
+                            <h5>
+                                <i class="fa-solid fa-money-bill-transfer"></i>
+                                Quy đổi tiền
+                            </h5>
+                        </div>
+                        <div class="main__body">
+                            <div class="main__nhapso">
+                                <input id="soUSD" type="number" placeholder="Nhập USD muốn đổi">
+                            </div>
+                            <div class="main__button">
+                                <button id="btnQuyDoi" class="btn">
+                                    Quy đổi
+                                </button>
+                            </div>
+                            <div class="main__ketqua">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <input class="form-control" type="text" readonly>
+                                <p id="showTien"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-bai4" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="main__title">
+                            <h5>
+                                <i class="fa-solid fa-plus-minus"></i>
+                                Tính diện tích, chu vi hình chữ nhật
+                            </h5>
+                        </div>
+                        <div class="main__body">
+                            <div class="main__nhapso">
+                                <input id="chieuDai" type="number" placeholder="Nhập chiều dài">
+                                <input id="chieuRong" type="number" placeholder="Nhập chiều rộng">
+                            </div>
+                            <div class="main__button">
+                                <button id="btnTinh" class="btn">
+                                    Tính
+                                </button>
+                            </div>
+                            <div class="main__ketqua">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <input class="form-control" type="text" readonly>
+                                <p id="showKetQua"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-bai5" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="main__title">
+                            <h5>
+                                <i class="fa-solid fa-infinity"></i>
+                                Tính tổng 2 ký số
+                            </h5>
+                        </div>
+                        <div class="main__body">
+                            <div class="main__nhapso">
+                                <input id="haiSo" type="number" placeholder="Nhập số 2 chữ số">
+                            </div>
+                            <div class="main__button">
+                                <button id="tinhKySo" class="btn">
+                                    Tính tổng
+                                </button>
+                            </div>
+                            <div class="main__ketqua">
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                <input class="form-control" type="text" readonly>
+                                <p id="showTongKySo"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <!-- JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

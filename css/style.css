@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.btn{
+    background-color: #f8adb2;
+    color: white;
+    font-weight: 600;
+    transition: all .5s;
+}
+.main{
+    background-image: url(../img/335915.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.nav-pills .nav-link{
+    background-color: #fff;
+}
+.nav-pills .nav-link.active{
+    background-color: #f8adb2;
+}
+.nav{
+    justify-content: center;
+}
+.nav-pills .nav-item{
+    padding: 0 10px;
+}
+.nav-pills .nav-item button{
+    border: 2px solid #f8adb2;
+}
+.main__header{
+    padding-top: 130px;
+    width: 60%;
+    margin: auto;
+
+}
+.main__content{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    padding: 50px 0;
+    max-height: 400px;
+    /* background-image: url(https://wallpaperaccess.com/full/99929.png); */
+    border-radius: 50px;
+    box-shadow: 0 10px 60px rgb(29 23 77 / 38%);
+    background: transparent;
+}
+
+
+.main__title {
+    margin-bottom: 30px;
+}
+.main__title i{
+    color: #f8adb2;
+}
+
+.main__body input{
+    padding: 10px 15px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(29 23 77 / 8%);
+    margin: 15px 2px;
+    border: 2px solid #f8adb2;
+}
+.main__body input:focus{
+    outline: none;
+}
+.main__ketqua{
+    position: relative;
+}
+
+.main__ketqua i {
+    position: absolute;
+    left: 35px;
+    top: 19px;
+    font-size: 20px;
+    color: white;
+    z-index: 99;
+}
+.main__ketqua p{
+    position: absolute;
+    top: 15px;
+    left: 65px;
+    color: white;
+    font-size: 20px;
+}
+.form-control[readonly]{
+    background-color: #f8adb2;
+}
+.main__ketqua input{
+    padding: 25px 0;
+    border-color: transparent;
+    box-shadow: none;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.main__title h5{
+    font-size: 30px;
+    color: #f8adb2;
+}
+
+
+.btn:focus{
+    box-shadow: none;
+}
