@@ -1,5 +1,23 @@
                  // Bài tập 1
 
+/**
+ *          - Tính tiền lương nhân viên
+ * 
+ * - Đầu vào:
+ * 
+ * Tạo biến để lấy thông tin người dùng
+ * var luongNgay = ..
+ * var soNgayLam = ..
+ * 
+ * - Xử lý:
+ * 
+ * tongLuong = luongNgay * soNgayLam;
+ * 
+ * - Đầu ra:
+ * 
+ * tongLuong = ?
+ */
+
 //      - Tính tiền lương nhân viên
 
 document.getElementById("btnTinhLuong").onclick = function() {
@@ -23,6 +41,27 @@ document.getElementById("showLuong").innerHTML = ketQua;
                     // Bài tập 2
 
 //         - Tính giá trị trung bình
+/**
+ * - Đầu vào:
+ * 
+ * Đặt biến lấy thông tin người dùng
+ * 
+ * var number1 = ..
+ * var number2 = ..
+ * var number3 = ..
+ * var number4 = ..
+ * var number5 = ..
+ * 
+ * - Xử lý:
+ * 
+ * tongTrungBinh = (number1 + number2 + number3 + number4 + number5) / 5;
+ * 
+ * - Đầu ra:
+ * 
+ * tongTrungBinh = ?
+ */
+
+
 
 document.getElementById("tinhTrungBinh").onclick = function(){
 
@@ -48,6 +87,20 @@ document.getElementById("showTrungBinh").innerHTML = ketQua;
                     // Bài tập 3
 
 //          - Quy đổi tiền
+/**
+ * - Đầu vào:
+ * Giả sử
+ * giá usd = 23500
+ * var soUSD = ..
+ * 
+ * - Xử lý
+ * 
+ * tongTien = giaUSD * soUSD;
+ * 
+ * - Đầu ra:
+ * 
+ * tongTien = ?
+ */
 
 document.getElementById("btnQuyDoi").onclick = function() {
     
@@ -71,6 +124,22 @@ document.getElementById("showTien").innerHTML = ketQua;
                     // Bài tập 4
 
 //          - Tính diện tích, chu vi hình chữ nhật
+/**
+ * - Đầu vào:
+ * Đặt biến lấy thông tin người dùng
+ * var chieuDai = ?
+ * var chieuRong = ?
+ * 
+ * - Xử lý:
+ * 
+ * dienTich = chieuDai * chieuRong;
+ * chuVi = (chieuDai + chieuRong) * 2;
+ * 
+ * - Đầu ra:
+ * 
+ * dienTich = ?
+ * chuVi = ?
+ */
 
 document.getElementById("btnTinh").onclick = function() {
 
@@ -95,6 +164,25 @@ document.getElementById("showKetQua").innerHTML = ketQua;
                     // Bài tập 5
 
 //          - Tính tổng 2 ký số
+/**
+ * - Đầu vào:
+ * 
+ * Đặt biến lấy thông tin người dùng
+ * haiSo = ?
+ * 
+ * - Xử lý:
+ * 
+ * hangChuc = Math.floor( haiSo / 10);
+ * hangDonVi = Math.floor(haiSo % 10);
+ * 
+ * tongKySo = hangChuc + hangDonVi;
+ * 
+ * - Đầu ra:
+ * 
+ * tongKySo = ?
+ * 
+ */
+
 
 document.getElementById("tinhKySo").onclick = function() {
     
